@@ -1,0 +1,133 @@
+.cutomer_feedback
+	margin-top: 60px
+	background: url(/img/book-1986286_1920.png)
+	height: 450px
+	h2
+		text-align: center
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: 500
+		color: #f1592a
+		padding-top: 50px
+@media screen and ( max-width: 630px )
+	.cutomer_feedback
+		margin-bottom: 150px
+
+.wrapper_2
+	height: 200px
+	margin: auto
+	position: relative
+	width: 73.5%
+	text-align: center
+@media screen and ( max-width: 1030px )
+	.wrapper_2
+		height: 250px
+@media screen and ( max-width: 630px )
+	.wrapper_2
+		height: 320px
+	
+.slider_2
+	background-color: #ddd
+	height: inherit
+	position: relative
+	width: inherit
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5)
+	margin: auto
+	margin-top: 80px
+	h4
+		margin: 0 auto
+	p
+		margin: 0 10% 10px 10%
+
+.wrapper_2 > input
+	display: none
+.slides_2
+	height: inherit
+	position: absolute
+	width: inherit
+	z-index: 0
+	transform: scale(1.5)
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s
+		
+.slide1_2 
+	background: #ffffff
+	width: 100%	
+	opacity: 0
+
+	img
+		margin-top: -35px
+		
+		
+.slide2_2
+	background: #ffffff
+	width: 100%
+	opacity: 0
+	img
+		margin-top: -35px
+
+.slide3_2
+	background: #ffffff
+	width: 100%
+	opacity: 0
+	img
+		margin-top: -35px
+
+.wrapper_2 .controls_2
+	left: 50%
+	margin-left: -68px
+	position: absolute
+	margin-top: 30px
+
+.wrapper_2 label
+	cursor: pointer
+	display: inline-block
+	height: 14px
+	margin: 25px 12px 0 16px
+	position: relative
+	width: 14px
+	border-radius: 50%
+	transition: background ease-in-out .5s
+    
+.wrapper_2 label:after
+	border: 2px solid #ddd
+	content: " "
+	display: block
+	height: 14px
+	width: 14px
+	border-radius: 50%
+	left: -2px
+	position: absolute
+	top: -2px
+.wrapper_2 label:hover, 
+#slide1_2:checked ~ .controls_2 label:nth-of-type(1),
+#slide2_2:checked ~ .controls_2 label:nth-of-type(2),
+#slide3_2:checked ~ .controls_2 label:nth-of-type(3)
+	background: #f1592a
+
+#slide1_2:checked ~ .slider_2 > .slide1_2,
+#slide2_2:checked ~ .slider_2 > .slide2_2,
+#slide3_2:checked ~ .slider_2 > .slide3_2
+	opacity: 1
+	z-index: 1
+	transform: scale(1)
+	
+.massage
+	background: url(/img/massage.png)
+	text-align: center
+	margin-top: 40px
+	height: 300px
+
+.massage_text
+	margin: 50px 31%
+	padding-top: 90px
+	font-size: 22px
+	font-weight: 400
+	line-height: 33px
+	color: #ffffff
+@media screen and ( max-width: 1025px )
+	.massage_text
+		padding-top: 30px
+@media screen and ( max-width: 801px )
+	.massage_text
+		padding-top: 30px
+		margin: 50px 5%

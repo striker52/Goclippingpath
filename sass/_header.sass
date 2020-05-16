@@ -1,0 +1,178 @@
+.href
+    text-decoration: none
+    color: #fff
+.conteiner-element
+    margin: auto
+	
+.icons-shape
+    margin-left: 10px
+@media screen and ( max-width: 450px )
+	.icons-shape
+		display: none
+
+.menu__item:hover
+    background: #f1592a
+.block_navbar
+    display: flex    
+    justify-content: space-between
+.menu_navbar
+    display: flex
+    margin-right: 5%
+.menu__item
+    margin: auto
+    margin-right: 20px
+    padding: 13px 4px
+    text-transform: uppercase
+    color: #fff
+    text-decoration: none
+    font-size: 19px
+    font-weight: 500
+@media screen and ( max-width: 600px ) 
+    .menu__item
+        font-size: 14px
+@media screen and ( max-width: 490px ) 
+    .menu__item
+        margin-right: 0px
+.logo
+    margin-left: 150px
+@media screen and ( max-width: 1050px ) 
+    .logo 
+        margin-left: 0px
+@media screen and ( max-width: 900px ) 
+    .logo 
+        display: none
+.hero
+    display: block
+.wrapper
+	height: 880px
+	margin: auto
+	position: relative
+	width: 1800px
+@media screen and ( max-width: 1601px )
+	.wrapper
+		width: 1600px
+@media screen and ( max-width: 1367px )
+	.wrapper
+		width: 1366px
+		height: 680px
+@media screen and ( max-width: 1025px )
+	.wrapper
+		width: 1024px
+		height: 512px
+@media screen and ( max-width: 801px )
+	.wrapper
+		width: 800px
+		height: 400px
+@media screen and ( max-width: 481px )
+	.wrapper
+		width: 480px
+		height: 240px
+	
+.slider 
+	background-color: #ddd
+	height: inherit
+	overflow: hidden
+	position: relative
+	width: inherit
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5)
+.wrapper > input
+	display: none
+.slides
+	height: inherit
+	position: absolute
+	width: inherit
+	z-index: 0
+	transform: scale(1)
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s
+.slide3 
+    background: url(../img/Remove_Backgroundin.png)
+@media screen and ( max-width: 1601px )
+	.slide3 
+    background: url(../img/Remove_Backgroundin2.png)
+@media screen and ( max-width: 1367px )
+	.slide3 
+    background: url(../img/Remove_Backgroundin3.png)
+@media screen and ( max-width: 1025px )
+	.slide3 
+    background: url(../img/Remove_Backgroundin4.png)
+@media screen and ( max-width: 801px )
+	.slide3 
+    background: url(../img/Remove_Backgroundin5.png)
+@media screen and ( max-width: 481px )
+	.slide3 
+    background: url(../img/Remove_Backgroundin6.png)
+		
+.slide1 
+    background-image: url(../img/7.png)
+@media screen and ( max-width: 1601px )
+	.slide1 
+    background: url(../img/72.png)
+@media screen and ( max-width: 1367px )
+	.slide1 
+    background: url(../img/73.png)
+@media screen and ( max-width: 1025px )
+	.slide1 
+    background: url(../img/74.png)
+@media screen and ( max-width: 801px )
+	.slide1 
+    background: url(../img/75.png)
+@media screen and ( max-width: 481px )
+	.slide1 
+    background: url(../img/76.png)
+	
+.slide2 
+    background-image: url(../img/8-1.png)
+@media screen and ( max-width: 1601px )
+	.slide2 
+    background: url(../img/8-12.png)
+@media screen and ( max-width: 1367px )
+	.slide2 
+    background: url(../img/8-13.png)
+@media screen and ( max-width: 1025px )
+	.slide2 
+    background: url(../img/8-14.png)
+@media screen and ( max-width: 801px )
+	.slide2 
+    background: url(../img/8-15.png)
+@media screen and ( max-width: 481px )
+	.slide2 
+    background: url(../img/8-16.png)
+
+.wrapper .controls
+	left: 50%
+	margin-left: -98px
+	position: absolute
+
+
+.wrapper label
+	cursor: pointer
+	display: inline-block
+	height: 14px
+	margin: 25px 12px 0 16px
+	position: relative
+	width: 14px
+	border-radius: 50%
+	transition: background ease-in-out .5s
+    
+.wrapper label:after
+	border: 2px solid #ddd
+	content: " "
+	display: block
+	height: 14px
+	width: 14px
+	border-radius: 50%
+	left: -2px
+	position: absolute
+	top: -2px
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3)
+	background: #f1592a
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3
+	opacity: 1
+	z-index: 2
+	transform: scale(1)
